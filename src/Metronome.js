@@ -27,7 +27,7 @@ export const Metronome = () => {
    </FirstRow>
    <SecondRow>
     <i class="fa fa-minus" onClick={() => setBpm(bpm - 1)}></i>
-    <input type="range" value={bpm} min="40" max="218" onChange={(e) => setBpm(e.target.value)} />
+    <input type="range" value={bpm} min="40" max="218" onChange={(e) => setBpm(parseInt(e.target.value))} />
     <i class="fa fa-plus" onClick={() => setBpm(bpm + 1)}></i>
    </SecondRow>
   </Container>
